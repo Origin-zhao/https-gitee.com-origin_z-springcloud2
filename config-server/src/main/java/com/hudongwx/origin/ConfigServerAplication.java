@@ -7,10 +7,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer //开启Config Server
 @SpringBootApplication
-public class ConfigAplication {
+public class ConfigServerAplication {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(ConfigAplication.class)
+        new SpringApplicationBuilder(ConfigServerAplication.class)
                 .web(true)
                 .run(args);
     }
