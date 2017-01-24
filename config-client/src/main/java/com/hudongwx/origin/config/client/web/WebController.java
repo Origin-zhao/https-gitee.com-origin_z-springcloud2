@@ -1,5 +1,4 @@
-package com.hudongwx.origin.config.client;
-
+package com.hudongwx.origin.config.client.web;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -10,12 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WebController {
 
-    @Value("${from}")
-    private String from;
+    @Value("${app}")
+    private String app;
 
-    @RequestMapping("/from")
-    public String from(){
-        return this.from;
+    @RequestMapping("/app")
+    public String from() {
+        return this.app;
     }
+
 
 }
